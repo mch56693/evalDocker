@@ -24,7 +24,7 @@
 - (1)
 
 ```bash
-$ docker network create --driver bridge nombre_red
+$ docker network create --driver bridge redbd
 ```
 
 ![ej1](./E3-Imagenes/ej1.png)
@@ -34,7 +34,7 @@ $ docker network create --driver bridge nombre_red
 - (2) - mariadb
 
 ```bash
-$ docker run -d --name nombre_contenedor --network nombre_red -p 3309:3306 -e MYSQL_ROOT_PASSWORD=contraseña -v mariadb_data:/var/lib/mysql mariadb
+$ docker run -d --name mariadb --network nombre_red -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1234 -v mariadb_data:/var/lib/mysql mariadb
 ```
 
 ![ej2](./E3-Imagenes/ej2.png)
@@ -44,7 +44,7 @@ $ docker run -d --name nombre_contenedor --network nombre_red -p 3309:3306 -e MY
 - (3) - adminer
 
 ```bash
-$ docker un -d --name nombre_contenedor --network nombre_red -p 8080:8080 adminer
+$ docker run -d --name adminer --network nombre_red -p 8080:8080 adminer
 ```
 
 ![ej3](./E3-Imagenes/ej3.png)
@@ -75,14 +75,38 @@ $ docker un -d --name nombre_contenedor --network nombre_red -p 8080:8080 admine
 
 - Captura de pantalla y documento donde se vea el acceso a la BD a través de la interfaz web de Adminer 
 
+  ![ej6](./E3-Imagenes/ej6.png)
+
   
 
 - Captura de pantalla y documento donde se vea la creación de una BD con la interfaz web Adminer
+
+  ![ej7](./E3-Imagenes/ej7.png)
+
+  ![ej7.1](./E3-Imagenes/ej7.1.png)
 
   
 
 - Captura de pantalla y documento donde se entre a la consola del servidor web en modo texto y se compruebe que se ha creado la BD
 
+  ```bash
+  $ docker exec -it mariadb /bin/bash
+  # mariabd -u root -p
+  ```
+
+  ```php
+  > show databases;
+  ```
+
+  ![ej8](./E3-Imagenes/ej8.png)
+
   
 
 - Borrar los contenedores la red y los volúmenes utilizados
+
+  ```bash
+  $ docker rm adminer
+  $ docker rm mariadb
+  ```
+
+  ![ej9](./E3-Imagenes/ej9.png)
