@@ -44,7 +44,7 @@ Hoy es día 19 de Febrero y la fecha de entrega de esta actividad es el 29 de Fe
 
 ​	
 
-*Fecha de realización:* 
+*Fecha de realización:* 2 de Marzo a las 15:59
 
 ------
 
