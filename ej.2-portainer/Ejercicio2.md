@@ -29,29 +29,29 @@ Utiliza una imagen de 'Portainer' para gestionar Docke. Documenta la aplicación
 $ docker run -d -p 9000:9000 --name portainer -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
 ```
 
-![ej1](./E2 - Imagenes/ej1.png)
+![ej1](./E2-Imagenes/ej1.png)
 
 
 
 - (2)
 
-![ej2](./E2 - Imagenes/ej2.png)
+![ej2](./E2-Imagenes/ej2.png)
 
 
 
 - ##### Muestra contenedores activos, para un contenedor, borra un contenedor
 
-![ej3](./E2 - Imagenes/ej3.png)
+![ej3](./E2-Imagenes/ej3.png)
 
-![ej3.1](./E2 - Imagenes/ej3.1.png)
+![ej3.1](./E2-Imagenes/ej3.1.png)
 
-![ej3.2](./E2 - Imagenes/ej3.2.png)
+![ej3.2](./E2-Imagenes/ej3.2.png)
 
-![ej3.3](./E2 - Imagenes/ej3.3.png)
+![ej3.3](./E2-Imagenes/ej3.3.png)
 
-![ej3.4](./E2 - Imagenes/ej3.4.png)
+![ej3.4](./E2-Imagenes/ej3.4.png)
 
-![ej3.5](./E2 - Imagenes/ej3.5.png)
+![ej3.5](./E2-Imagenes/ej3.5.png)
 
 
 
@@ -59,21 +59,21 @@ $ docker run -d -p 9000:9000 --name portainer -v /var/run/docker.sock:/var/run/d
 
   - Crear una red
 
-    ![ej4](./E2 - Imagenes/ej4.png)
+    ![ej4](./E2-Imagenes/ej4.png)
 
-    ![ej4.1](./E2 - Imagenes/ej4.1.png)
+    ![ej4.1](./E2-Imagenes/ej4.1.png)
 
     
 
   - Consultar detalles de red
 
-    ![ej4.2](./E2 - Imagenes/ej4.2.png)
+    ![ej4.2](./E2-Imagenes/ej4.2.png)
 
     
 
   - Borrar una red
 
-    ![ej4.3](./E2 - Imagenes/ej4.3.png)
+    ![ej4.3](./E2-Imagenes/ej4.3.png)
 
 ​		
 
@@ -81,20 +81,20 @@ $ docker run -d -p 9000:9000 --name portainer -v /var/run/docker.sock:/var/run/d
 
   - Crea un volumen
 
-    ![ej5](./E2 - Imagenes/ej5.png)
+    ![ej5](./E2-Imagenes/ej5.png)
 
-    ![ej5.1](./E2 - Imagenes/ej5.1.png)
+    ![ej5.1](./E2-Imagenes/ej5.1.png)
 
     
 
   - Consulta detalles de volumen
 
-    ![ej5.2](./E2 - Imagenes/ej5.2.png)
+    ![ej5.2](./E2-Imagenes/ej5.2.png)
 
     
 
   - Elimina un volumen
 
-    ![ej5.3](./E2 - Imagenes/ej5.3.png)
+    ![ej5.3](./E2-Imagenes/ej5.3.png)
 
-    ![ej5.4](./E2 - Imagenes/ej5.4.png)
+    ![ej5.4](./E2-Imagenes/ej5.4.png)
