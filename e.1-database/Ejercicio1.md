@@ -9,11 +9,12 @@
 
 #### Enunciado
 
-- Arrancar un contenedor que se llame bbdd y que ejecute una instancia de la imagen mariadb para que sea accesible desde el puerto 3306.
-- Antes de arrancarlo visitar la página del contenedor en Docker Hub y establecer las variables de entorno necesarias para que:
-  - La contraseña de root sea root .
-  - Crear una base de datos automáticamente al arrancar que se llame prueba .
-  - Crear el usuario invitado con la contraseña invitado.
+- Arrancar un contenedor que se llame `bbdd` y que ejecute una instancia de la imagen mariadb para que sea accesible desde el puerto 3306.
+- Arrancar un contenedor que se llame `web` y que ejecute una instancia de la imagen php para que sea accesible desde el puerto 8080.
+- Antes de arrancarlo visitar la página del contenedor en `Docker Hub` y establecer las variables de entorno necesarias para que:
+  - La contraseña de `root` sea `root` .
+  - Crear una base de datos automáticamente al arrancar que se llame `prueba` .
+  - Crear el usuario `invitado` con la contraseña `invitado`.
 
 ------
 
@@ -22,14 +23,25 @@
 - (1)
 
   ```bash
-  $ docker run -d --name bbdd -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=prueba -v MYSQL_USER=alvaro -v MYSQL_PASSWORD=alvaro1234
+  $ docker run -d --name bbdd -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=prueba -v MYSQL_USER=alvaro -v MYSQL_PASSWORD=alvaro1234 mariadb
   ```
 
   ![ej1](./E1-Imagenes/ej1.png)
 
-  
+
+
 
 - (2)
+
+  ```bash
+  $ docker run -d --name web -p 8080:80 php:7.4-apache
+  ```
+
+  ![ej2.1](./E1-Imagenes/ej2.1.png)
+
+
+
+- (2.1)
 
   ```bash
   $ cd ProyectoEval/Database
@@ -40,7 +52,7 @@
 
 
 
-- (3)
+- (2.2)
 
   ```bash
   $ cd ProyectoEval/Database
@@ -79,6 +91,12 @@
 
   ![ej7](./E1-Imagenes/ej7.png)
 
+  > Como bien se puede ver en la siguiente captura, al hacer la conexión al contenedor mariadb, se carga la database de `prueba` creada anteriormente desde el terminal. A su vez podemos ver como el usuario `root` ha sido creado ademas del propio usuario `alvaro` ya creado desde la terminal cuando se hizo el paso de crear el contenedor de la base de datos.
+
+  ![ej8](./E1-Imagenes/ej8.png)
+
+  
+
   
 
 - Captura de pantalla y documento donde se comprueba que no se puede borrar la imagen mariadb
@@ -88,4 +106,4 @@
   $ docker rmi mariadb
   ```
 
-  ![ej10](./E1-Imagenes/ej10.png)
+  ![ej9](./E1-Imagenes/ej9.png)
