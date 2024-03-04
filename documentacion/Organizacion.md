@@ -20,44 +20,36 @@ Hoy es día 19 de Febrero y la fecha de entrega de esta actividad es el 29 de Fe
 
 
 
-*Fecha de realización:* 19 de Febrero a las 10:09
+> ​	*Fecha de realización:* 19 de Febrero a las 10:09
 
 ------
 
 #### Ejercicio 1 - Base de Datos
 
-​	
-
-*Fecha de realización:* 22 de Febrero a las 11:14
+> ​	*Fecha de realización:* 22 de Febrero a las 11:14
+>
 
 ------
 
 #### Ejercicio 2 - Portainer
 
-​	
-
-*Fecha de realización:* 26 de Febrero a las 10:21
+> ​	*Fecha de realización:* 26 de Febrero a las 10:21
 
 ------
 
 #### Ejercicio 3 - Contenedores en Red
 
-​	
-
-*Fecha de realización:* 2 de Marzo a las 15:59
+> ​	*Fecha de realización:* 2 de Marzo a las 15:59
+>
 
 ------
 
 #### Ejercicio 4 - Docker Compose
 
-
-
-*Fecha de realización:* 
+> ​	*Fecha de realización:* 2 de Marzo a las 18:08
 
 ------
 
 #### Ejercicio 5 - Imágen Dockerfile
 
-​	
-
-*Fecha de realización:* 
+> ​	*Fecha de realización:* 4 de Marzo a las 2:23
